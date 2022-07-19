@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Baloo Chettan 2', cursive;
+    margin: 0;
 }
 
 .btn {
@@ -13,6 +14,12 @@ body {
     font-size: 17px;
     font-weight: 700;
     border-radius: 50px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #000;
+    cursor: pointer;
 }
 
 /* header style starts */
@@ -77,12 +84,12 @@ header {
 
 /* company logo section */
 .company-logo {
-    width: 80%;
+    width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid #cce4ffa1;
-    border-bottom: 1px solid #cce4ffa1;
+    border-top: 1px solid rgba(204, 228, 255, 0.63);
+    border-bottom: 1px solid rgba(204, 228, 255, 0.63);
     padding: 2rem;
 }
 
@@ -159,5 +166,183 @@ header {
     font-weight: 700;
 }
 
+.product-bottom-button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 1000px;
+    margin: auto;
+}
+
+
+.product-btn {
+    color: #E02C6D;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: right;
+    padding: 2rem;
+}
 
 /* Products/ main/ popular collection section ends */
+
+/* feature section starts */
+.featured {
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    gap: 4rem;
+    align-items: center;
+    padding: 5rem;
+}
+
+.feature-details h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.feature-details p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6C6C6C;
+    align-items: center;
+}
+
+.feature-details .btn {
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+
+
+/* feature section ends */
+
+/* footer */
+
+footer {
+    background-color: #0A0826;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+.footer-text h1 {
+    color: #fff;
+}
+
+.footer-text p {
+    color: #fff;
+}
+
+footer .ficon {
+    color: #fff;
+    background-color: #ffffff1a;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin: .3rem;
+}
+
+
+/* Media queri */
+
+/* mobile devices */
+
+@media only screen and (max-width: 688px) {
+    .nav-right ul {
+        display: none;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        gap: 3rem;
+        font-size: 1.2rem;
+        color: #3A3A3A;
+    }
+
+    .hero-area {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .nav-shopping {
+        font-size: 2.5rem;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .hero-image-front img {
+        width: 70%;
+    }
+
+    .hero-text h1 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .hero-text p {
+        color: #3A3A3A;
+        width: 80%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+
+
+    /* .company-logo {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        border-top: 1px solid rgba(204, 228, 255, 0.63);
+        border-bottom: 1px solid rgba(204, 228, 255, 0.63);
+        padding: 0rem;
+    } */
+
+    .company-logo {
+        width: 80%;
+        Display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .company-logo img {
+        width: 80%;
+    }
+
+
+    .products-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .product-bottom-button {
+        width: 100%;
+    }
+
+    .featured {
+        width: 80%;
+        gap: 0;
+        padding: 0;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .feature-photo img {
+        width: 100%;
+        justify-content: start;
+        padding: 2rem 0;
+    }
+
+}
+
+/* mobile devices */
